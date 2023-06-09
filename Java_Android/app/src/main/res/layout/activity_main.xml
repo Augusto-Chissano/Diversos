@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/labelNomeProduto"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="Nome do Produto:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <EditText
+        android:id="@+id/campoNomeProduto"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/edittext_border"
+        android:hint="Digite o nome do produto"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelNomeProduto"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/labelPrecoProduto"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="Preço do Produto:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoNomeProduto"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <EditText
+        android:id="@+id/campoPrecoProduto"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/edittext_border"
+        android:hint="Digite o preço do produto"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelPrecoProduto"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/checkboxImportado"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:text="Produto Importado"
+        app:layout_constraintBottom_toTopOf="@+id/btnSalvar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoPrecoProduto"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="350dp"
+        android:layout_height="64dp"
+        android:layout_margin="20dp"
+        android:text="Salvar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.686"
+        android:onClick="salvarProduto" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
